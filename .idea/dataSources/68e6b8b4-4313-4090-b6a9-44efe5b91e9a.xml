@@ -747,45 +747,45 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="224" parent="1" name="hospital">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:52</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="225" parent="1" name="information_schema">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:52</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="226" parent="1" name="mysql">
       <Grants>user|||mysql.session|localhost|SELECT|G</Grants>
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:52</LastIntrospectionLocalTimestamp>
       <CollationName>latin1_swedish_ci</CollationName>
     </schema>
     <schema id="227" parent="1" name="performance_schema">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:52</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="228" parent="1" name="hos">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:51</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="229" parent="1" name="sys">
       <Grants>sys_config|||mysql.sys|localhost|SELECT|G</Grants>
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:53</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="230" parent="1" name="0717test">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:50</LastIntrospectionLocalTimestamp>
       <CollationName>latin1_swedish_ci</CollationName>
     </schema>
     <schema id="231" parent="1" name="717disk">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:51</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="232" parent="1" name="company">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:51</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="233" parent="1" name="dbms">
-      <LastIntrospectionLocalTimestamp>2024-06-08.02:57:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-26.14:41:51</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <user id="234" parent="1" name="mysql.session">
@@ -4865,7 +4865,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="649" parent="242" name="Patient_id">
-      <AutoIncrement>19</AutoIncrement>
+      <AutoIncrement>17</AutoIncrement>
       <Comment>患者编号</Comment>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
@@ -4920,7 +4920,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="659" parent="243" name="Register_id">
-      <AutoIncrement>21</AutoIncrement>
+      <AutoIncrement>20</AutoIncrement>
       <Comment>挂号编号</Comment>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>

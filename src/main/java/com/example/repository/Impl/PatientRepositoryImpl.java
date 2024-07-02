@@ -47,6 +47,7 @@ public class PatientRepositoryImpl implements PatientRepository {
 
     @Override
     public boolean findByUsername(String username) {
+        System.out.println(username);
         boolean state = false;
         Connection connection = null;
         PreparedStatement statement = null;

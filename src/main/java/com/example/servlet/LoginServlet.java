@@ -17,6 +17,7 @@ import java.io.IOException;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     private static LoginService loginService = new LoginServiceImpl();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -28,32 +29,30 @@ public class LoginServlet extends HttpServlet {
         String logintype = req.getParameter("logintype");
 
         switch (logintype) {
-
             case "登录":
                 String username = req.getParameter("username");
                 String password = req.getParameter("password");
                 String usertype = req.getParameter("type");
-                HttpSession session = (HttpSession)req.getSession();
-                Object object = loginService.login(username ,password , usertype );
+                HttpSession session = req.getSession();
+                Object object = loginService.login(username, password, usertype);
 
                 switch (usertype) {
                     case "patient":
-                        // 将返回的用户存入session中
                         Patient patient = (Patient) object;
-                        session.setAttribute("patient" , patient);
-                        resp.sendRedirect("/register");
+                        session.setAttribute("patient", patient);
                         break;
                     case "doctor":
                         Doctor doctor = (Doctor) object;
-                        session.setAttribute("doctor" , doctor);
-                        resp.sendRedirect("/doctorHandle");
+                        session.setAttribute("doctor", doctor);
                         break;
                     case "admin":
                         Admin admin = (Admin) object;
-                        session.setAttribute("admin" , admin);
-                        resp.sendRedirect("admin");
+                        session.setAttribute("admin", admin);
                         break;
                 }
+                // 跳转到公告页面，并传递用户类型
+                session.setAttribute("usertype", usertype);
+                resp.sendRedirect("notice.jsp");
                 break;
             case "注册":
                 resp.sendRedirect("/jsp/patient/signup1.jsp");
@@ -61,3 +60,4 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+
